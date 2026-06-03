@@ -150,7 +150,7 @@ if ($_SERVER["REQUEST_METHOD"] == "POST") {
 
     <!-- TEXTO E LINK EM LINHA ÚNICA CORRIGIDOS -->
     <div class="secao-registrar">
-        Novo por aqui? <a href="registrar.php">Crie sua conta.</a>
+        Novo por aqui? <a href="cadastrar.php">Crie sua conta.</a>
     </div>
 
     <div class="links-uteis">
