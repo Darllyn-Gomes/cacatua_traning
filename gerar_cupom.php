@@ -14,7 +14,6 @@ $data = date('d/m/Y H:i');
     <title>Recibo - Cacatua Training</title>
     <link rel="stylesheet" href="css/style.css">
     <style>
-        /* Reutilizando o container padrão do sistema */
         .container { 
             max-width: 400px; margin: 50px auto; padding: 30px; 
             border: 1px solid rgba(255, 255, 255, 0.15); border-radius: 12px; 
@@ -35,7 +34,22 @@ $data = date('d/m/Y H:i');
             border: none; border-radius: 8px; font-weight: bold; cursor: pointer; 
         }
 
-        /* Esconde o que não é o cupom na hora de imprimir */
+        /* Estilo do link com Hover */
+        .link-dashboard {
+            color: #666; 
+            text-decoration: none; 
+            transition: color 0.3s ease; 
+            display: block; 
+            margin-top: 20px;
+            font-size: 14px;
+        }
+
+        .link-dashboard:hover {
+            color: #FFD700; 
+            text-decoration: underline; 
+        }
+
+        /* Esconde elementos na impressão */
         @media print {
             body * { visibility: hidden; }
             .cupom-visual, .cupom-visual * { visibility: visible; }
@@ -60,7 +74,7 @@ $data = date('d/m/Y H:i');
     </div>
 
     <button class="btn-imprimir no-print" onclick="window.print()">Imprimir Comprovante</button>
-    <a href="dashboard.php" class="no-print" style="color: #666; font-size: 14px; margin-top: 20px; display: block;">Ir para Dashboard</a>
+    <a href="dashboard.php" class="link-dashboard no-print">Ir para Dashboard</a>
 </div>
 
 </body>

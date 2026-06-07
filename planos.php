@@ -38,6 +38,20 @@ try {
             cursor: pointer; text-decoration: none; margin-top: 15px; 
         }
         .vantagens { font-size: 14px; color: #ccc; margin-bottom: 10px; line-height: 1.6; }
+
+        /* Estilo do link Voltar com Hover */
+.link-voltar {
+    color: #666; 
+    text-decoration: none; 
+    display: block; 
+    margin-top: 20px;
+    transition: color 0.3s ease;
+}
+
+.link-voltar:hover {
+    color: #FFD700; 
+    text-decoration: underline;
+}
     </style>
 </head>
 <body>
@@ -61,7 +75,7 @@ try {
         </div>
     <?php endforeach; ?>
 
-    <a href="dashboard.php" style="color: #666; display: block; margin-top: 20px;">Voltar</a>
+    <a href="dashboard.php" class="link-voltar">Voltar</a>
 </div>
 
 </body>
